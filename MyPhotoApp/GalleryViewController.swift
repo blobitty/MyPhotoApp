@@ -17,8 +17,33 @@ class GalleryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setBackground()
+        getImage(imageName: "test.png")
         // Do any additional setup after loading the view.
+    }
+    
+    func getImage(imageName: String) {
+        let fileManager = FileManager.default
+        let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
+        if fileManager.fileExists(atPath: imagePath) {
+            //galleryImageView.image = UIImage(contentsOfFile: imagePath)
+            let image = UIImage(contentsOfFile: imagePath)
+            let newImage = UIImage(cgImage: (image?.cgImage!)!, scale: (image?.scale)!, orientation: .right)
+            galleryImageView.image = newImage
+        } else {
+            print("No Image Found")
+        }
+    }
+    
+    func setBackground() {
+        view.addSubview(backgroundImageView)
+        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+        backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        backgroundImageView.image = UIImage(named: "background")
+        view.sendSubviewToBack(backgroundImageView)
     }
     
 
