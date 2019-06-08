@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GalleryViewController.swift
 //  MyPhotoApp
 //
 //  Created by Bobby Bah on 6/7/19.
@@ -7,13 +7,13 @@
 //
 
 import UIKit
-import CoreImage
 
-class ViewController: UIViewController {
+class GalleryViewController: UIViewController {
 
+     let backgroundImageView = UIImageView()
     
-    var imagePickerController: UIImagePickerController!
-    @IBOutlet weak var myImageView: UIImageView!
+    @IBOutlet weak var galleryImageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,26 +21,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func handleSavePhotoPressed(_ sender: Any) {
-    }
-    
-    
-    @IBAction func handleTakePhotoPressed(_ sender: Any) {
-    }
-    
-    
-    @IBAction func handleFilterOne(_ sender: Any) {
-    }
-    
-    @IBAction func handleFilterTwo(_ sender: Any) {
-    }
-    
-    
-    @IBAction func handleFilterThree(_ sender: Any) {
-    }
+
     /*
-     
-     // MARK: - Navigation
+    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

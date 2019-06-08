@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FFE725EE22AB34240062982A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE725ED22AB34240062982A /* AppDelegate.swift */; };
-		FFE725F022AB34240062982A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE725EF22AB34240062982A /* ViewController.swift */; };
 		FFE725F322AB34240062982A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE725F122AB34240062982A /* Main.storyboard */; };
 		FFE725F622AB34240062982A /* MyPhotoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFE725F422AB34240062982A /* MyPhotoApp.xcdatamodeld */; };
 		FFE725F822AB34250062982A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE725F722AB34250062982A /* Assets.xcassets */; };
 		FFE725FB22AB34250062982A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE725F922AB34250062982A /* LaunchScreen.storyboard */; };
+		FFE7260322AB507B0062982A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7260222AB507B0062982A /* ViewController.swift */; };
+		FFE7260A22AB53E50062982A /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7260922AB53E50062982A /* GalleryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FFE725EA22AB34240062982A /* MyPhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE725ED22AB34240062982A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFE725EF22AB34240062982A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FFE725F222AB34240062982A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFE725F522AB34240062982A /* MyPhotoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyPhotoApp.xcdatamodel; sourceTree = "<group>"; };
 		FFE725F722AB34250062982A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE725FA22AB34250062982A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFE725FC22AB34250062982A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE7260222AB507B0062982A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFE7260922AB53E50062982A /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				FFE725ED22AB34240062982A /* AppDelegate.swift */,
-				FFE725EF22AB34240062982A /* ViewController.swift */,
 				FFE725F122AB34240062982A /* Main.storyboard */,
 				FFE725F722AB34250062982A /* Assets.xcassets */,
 				FFE725F922AB34250062982A /* LaunchScreen.storyboard */,
 				FFE725FC22AB34250062982A /* Info.plist */,
 				FFE725F422AB34240062982A /* MyPhotoApp.xcdatamodeld */,
+				FFE7260222AB507B0062982A /* ViewController.swift */,
+				FFE7260922AB53E50062982A /* GalleryViewController.swift */,
 			);
 			path = MyPhotoApp;
 			sourceTree = "<group>";
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFE725F022AB34240062982A /* ViewController.swift in Sources */,
+				FFE7260322AB507B0062982A /* ViewController.swift in Sources */,
+				FFE7260A22AB53E50062982A /* GalleryViewController.swift in Sources */,
 				FFE725EE22AB34240062982A /* AppDelegate.swift in Sources */,
 				FFE725F622AB34240062982A /* MyPhotoApp.xcdatamodeld in Sources */,
 			);
@@ -293,7 +297,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nyc.bbah.MyPhotoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.bbah.MyToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,7 +315,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nyc.bbah.MyPhotoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.bbah.MyToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
